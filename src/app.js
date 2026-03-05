@@ -6,6 +6,9 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 function generateNewCard () {
+  document.getElementById('wholeCard').style.width= '300px';
+  document.getElementById('wholeCard').style.height= '400px';
+
   let randomNumberForFigure = Math.floor(Math.random() * 4) + 1;
   console.log(randomNumberForFigure);
   if      (randomNumberForFigure==1) {document.getElementById('upper-figure').innerHTML = '♦'; document.getElementById('lower-figure').innerHTML = '♦'; document.getElementById('wholeCard').style.color= "red";}

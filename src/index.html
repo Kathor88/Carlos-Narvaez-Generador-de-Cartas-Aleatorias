@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -15,15 +15,20 @@
     />
   </head>
 
-  <body class=" bg-success">
+  <body class="bg-success">
     <div class="container-fluid">
+
+        <div class="row" style="height: 50px;">
+          <div class="col-12"></div>
+        </div>
+
         <div class="row">
             <div class="col-4">
 
             </div>
             <!--Card-->
             <div class="col-4">
-                <div id="wholeCard" class="myCard bg-white position-relative">
+                <div id="wholeCard" class="myCard bg-white position-relative mx-auto">
                   <div id="upper-figure"  class="position-absolute top-0 start-0 ms-3"></div>
                   <div id="middle-number" class="position-absolute top-50 start-50 translate-middle"></div>
                   <div id="lower-figure"  class="position-absolute bottom-0 end-0 me-3"></div>
@@ -31,7 +36,7 @@
             </div>
             <!---->
             <div class="col-4 ">
-              <div class="container-fluid ">
+              <div class="container-fluid">
 
                     <div class="row ">
                       <div class="col-6 ">
@@ -63,6 +68,9 @@
               </div>
             </div>
         </div>
+
+
+
     </div>
 
     <script type="module" src="/app.js"></script>

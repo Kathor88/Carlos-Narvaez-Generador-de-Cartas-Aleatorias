@@ -1,5 +1,41 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+*{
+    /*border: solid 1px red;*/
 }
+
+#middle-number {
+    font-size: 150px;    
+}
+
+#upper-figure {
+    font-size: 80px;
+}
+
+#lower-figure {
+    font-size: 80px;
+    transform: rotate(180deg);
+}
+
+.myCard{
+    width: 300px; 
+    height: 400px;
+    border-radius: 15px;
+}
+
+.diamond {
+    color: red;
+}
+
+.heart {
+    color: red;
+}
+
+.spade {
+    color: black;
+}
+
+.club {
+    color: black;
+}
+

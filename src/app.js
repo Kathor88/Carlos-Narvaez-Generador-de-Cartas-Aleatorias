@@ -1,18 +1,16 @@
 import "bootstrap";
 import "./style.css";
 
-
-
 function generateNewCard () {
-  document.getElementById('wholeCard').style.width= '300px';
-  document.getElementById('wholeCard').style.height= '400px';
+  document.getElementById('wholeCard').style.width = '300px';
+  document.getElementById('wholeCard').style.height = '400px';
   document.getElementById('wholeCard').classList.remove('diamond');
   document.getElementById('wholeCard').classList.remove('heart');
   document.getElementById('wholeCard').classList.remove('spade');
   document.getElementById('wholeCard').classList.remove('club');
 
   let randomNumberForFigure = Math.floor(Math.random() * 4) + 1;
-  console.log(randomNumberForFigure);
+
   if      (randomNumberForFigure==1) {document.getElementById('upper-figure').innerHTML = '♦'; document.getElementById('lower-figure').innerHTML = '♦'; document.getElementById('wholeCard').classList.add("diamond");}
   else if (randomNumberForFigure==2) {document.getElementById('upper-figure').innerHTML = '♥'; document.getElementById('lower-figure').innerHTML = '♥'; document.getElementById('wholeCard').classList.add("heart");}
   else if (randomNumberForFigure==3) {document.getElementById('upper-figure').innerHTML = '♠'; document.getElementById('lower-figure').innerHTML = '♠'; document.getElementById('wholeCard').classList.add("spade");}

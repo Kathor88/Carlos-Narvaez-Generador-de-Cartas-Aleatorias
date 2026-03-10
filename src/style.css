@@ -1,14 +1,14 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-#upper-figure {
+#upperFigure {
     font-size: 80px;
 }
 
-#middle-number {
+#middleNumber {
     font-size: 150px;    
 }
 
-#lower-figure {
+#lowerFigure {
     font-size: 80px;
     transform: rotate(180deg);
 }

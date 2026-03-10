@@ -11,41 +11,41 @@ function generateNewCard () {
 
     let randomNumberForFigure = Math.floor(Math.random() * 4) + 1;
     if (randomNumberForFigure == 1) {
-        document.getElementById('upper-figure').innerHTML = '♦'; 
-        document.getElementById('lower-figure').innerHTML = '♦'; 
+        document.getElementById('upperFigure').innerHTML = '♦'; 
+        document.getElementById('lowerFigure').innerHTML = '♦'; 
         document.getElementById('wholeCard').classList.add("diamond");
     }
     else if (randomNumberForFigure == 2) {
-        document.getElementById('upper-figure').innerHTML = '♥'; 
-        document.getElementById('lower-figure').innerHTML = '♥'; 
+        document.getElementById('upperFigure').innerHTML = '♥'; 
+        document.getElementById('lowerFigure').innerHTML = '♥'; 
         document.getElementById('wholeCard').classList.add("heart");
     }
     else if (randomNumberForFigure == 3) {
-        document.getElementById('upper-figure').innerHTML = '♠'; 
-        document.getElementById('lower-figure').innerHTML = '♠'; 
+        document.getElementById('upperFigure').innerHTML = '♠'; 
+        document.getElementById('lowerFigure').innerHTML = '♠'; 
         document.getElementById('wholeCard').classList.add("spade");
     }
     else if (randomNumberForFigure == 4) {
-        document.getElementById('upper-figure').innerHTML = '♣'; 
-        document.getElementById('lower-figure').innerHTML = '♣'; 
+        document.getElementById('upperFigure').innerHTML = '♣'; 
+        document.getElementById('lowerFigure').innerHTML = '♣'; 
         document.getElementById('wholeCard').classList.add("club");
     }
 
     let randomNumberForNumber = Math.floor(Math.random() * 13);  
     if (randomNumberForNumber == 0) {
-        document.getElementById('middle-number').innerHTML = 'A';
+        document.getElementById('middleNumber').innerHTML = 'A';
     }
     else if (randomNumberForNumber == 10) {
-        document.getElementById('middle-number').innerHTML = 'J';
+        document.getElementById('middleNumber').innerHTML = 'J';
     }
     else if (randomNumberForNumber == 11) {
-        document.getElementById('middle-number').innerHTML = 'Q';
+        document.getElementById('middleNumber').innerHTML = 'Q';
     }
     else if (randomNumberForNumber == 12) {
-        document.getElementById('middle-number').innerHTML = 'K';
+        document.getElementById('middleNumber').innerHTML = 'K';
     }
     else {
-        document.getElementById('middle-number').innerHTML = randomNumberForNumber+1;
+        document.getElementById('middleNumber').innerHTML = randomNumberForNumber+1;
     }
 };
 
@@ -67,11 +67,12 @@ let wholeCardOutput = document.getElementById('wholeCard');
 
 cardWidthInput.addEventListener('input', function(event) {
     const currentValue = event.target.value; 
-    wholeCardOutput.style.width = currentValue+'px';
+    wholeCardOutput.style.width = currentValue +'px';
 });
 
 cardHeightInput.addEventListener('input', function(event) {
     const currentValue = event.target.value; 
-    wholeCardOutput.style.height = currentValue+'px';
+    wholeCardOutput.style.height = currentValue +'px';
 });
+
 

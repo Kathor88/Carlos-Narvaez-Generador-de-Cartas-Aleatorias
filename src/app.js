@@ -1,7 +1,7 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/4geeks.ico";
+
 
 function generateNewCard () {
   document.getElementById('wholeCard').style.width= '300px';

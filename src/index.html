@@ -5,8 +5,6 @@
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Card Generator</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -17,62 +15,55 @@
 
   <body class="bg-success">
     <div class="container-fluid">
+      
+      <div class="row" style="height: 50px;">
+        <div class="col-12"></div>
+      </div>
 
-        <div class="row" style="height: 50px;">
-          <div class="col-12"></div>
-        </div>
+      <div class="row">
+        <div class="col-4"></div>
+          <div class="col-4">
+              <div id="wholeCard" class="myCard bg-white position-relative mx-auto">
+                <div id="upper-figure"  class="position-absolute top-0 start-0 ms-3"></div>
+                <div id="middle-number" class="position-absolute top-50 start-50 translate-middle"></div>
+                <div id="lower-figure"  class="position-absolute bottom-0 end-0 me-3"></div>
+              </div>
+          </div>
+        <div class="col-4 ">
+          <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-4">
-
-            </div>
-            <!--Card-->
-            <div class="col-4">
-                <div id="wholeCard" class="myCard bg-white position-relative mx-auto">
-                  <div id="upper-figure"  class="position-absolute top-0 start-0 ms-3"></div>
-                  <div id="middle-number" class="position-absolute top-50 start-50 translate-middle"></div>
-                  <div id="lower-figure"  class="position-absolute bottom-0 end-0 me-3"></div>
-                </div>
-            </div>
-            <!---->
-            <div class="col-4 ">
-              <div class="container-fluid">
-
-                    <div class="row ">
-                      <div class="col-6 ">
-                        <label for="myButton">Generate new card:</label>
-                      </div>
-                      <div class="col-6">
-                        <button id="myButton" type="button" class="btn btn-primary">New Card</button>                  
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-6">              
-                        <label for="cardWidth">Card width:</label>                     
-                      </div>
-                      <div class="col-6">                                 
-                        <input type="text" id="cardWidth" placeholder="Enter text here">          
-                    
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-6">
-                        <label for="cardHeight">Card height:</label>
-                      </div>
-                      <div class="col-6">                  
-                        <input type="text" id="cardHeight" placeholder="Enter text here">
-                      </div>
-                    </div>
+            <div class="row ">
+              <div class="col-6 ">
+                <label for="myButton">Generate new card:</label>
+              </div>
+              <div class="col-6">
+                <button id="myButton" type="button" class="btn btn-primary">New Card</button>                  
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-6">              
+                <label for="cardWidth">Card width:</label>                     
+              </div>
+              <div class="col-6">                                 
+                <input type="text" id="cardWidth" placeholder="Enter text here">                   
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <label for="cardHeight">Card height:</label>
+              </div>
+              <div class="col-6">                  
+                <input type="text" id="cardHeight" placeholder="Enter text here">
+              </div>
+            </div>
+          </div>
         </div>
-
-
-
+      </div>
     </div>
-
     <script type="module" src="/app.js"></script>
   </body>
 </html>
+
+

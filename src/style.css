@@ -1,13 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-
+#upper-figure {
+    font-size: 80px;
+}
 
 #middle-number {
     font-size: 150px;    
-}
-
-#upper-figure {
-    font-size: 80px;
 }
 
 #lower-figure {
